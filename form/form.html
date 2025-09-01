@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>styled form example</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <div>
+    <div class="form-container">
+        <h2>registration form</h2>
         <form>
-            <input type="text" placeholder="username">
-            <input type="password" placeholder="password">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" placeholder="enter your name" required><br><br>
+
+            <!-- email field -->
+             <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email" required><br><br>
+            <!-- password field -->
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" placeholder="enter your password" required><br><br>
+            <!-- gender -->
+             <label>gender</label>
+             <div class="radio-group">
+                <label><input type = "radio" name="gender" value="female">female</label>
+                <label><input type = "radio" name="gender" value="male">male</label>  
+            </div>
+
+            <!-- country -->
+            <label for="country">country:</label>
+            <select id="country" name="country" required>
+                <option value="">select your country</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="pakistan">pakistan</option>
+                </select><br><br>
+
+
+ <!--message-->
+           <label for="message">message:</label>
+           <textarea id="message" name="message" placeholder="enter your message here" required></textarea><br><br>
+           <button type="submit">submit</button>
         </form>
     </div>
 </body>
