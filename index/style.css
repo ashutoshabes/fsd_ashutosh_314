@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+body{
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+
+
+}
+header{
+ background-color: #333;
+ padding: 10px 0;
+ color: white;
+ text-align: center;
+ font-family:"Arima",cursive;
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+
+}
+header h1{
+    margin: 0;
+    font-size:24px;
+}
+    
+main{
+    flex:1;
+    padding: 20px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.socialicon{
+    margin:10px 0;
+    text-align: center;
+}
+.socialicon{
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+.socialicon a:hover{
+    color: #0cde2f;
+}
++

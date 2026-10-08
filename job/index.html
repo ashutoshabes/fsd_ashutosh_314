@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recommended Jobs</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <!-- Main Jobs Container -->
+        <section class="jobs-container">
+
+            <!-- TOP HEADER -->
+            <div class="top-bar">
+
+                <div class="title-area">
+                    <h1>
+                        Recommended jobs
+                    </h1>
+
+                    <span class="job-count">
+                        366
+                    </span>
+                </div>
+
+                <div class="sort-area">
+                    <span>Sort by:</span>
+
+                    <select id="sort">
+                        <option value="recent">
+                            Last updated
+                        </option>
+
+                        <option value="salary-high">
+                            Highest salary
+                        </option>
+
+                        <option value="salary-low">
+                            Lowest salary
+                        </option>
+
+                        <option value="az">
+                            A - Z
+                        </option>
+                    </select>
+
+                    <span class="sort-icon">
+                        ⇅
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- JOB GRID -->
+            <div class="jobs-grid" id="jobsContainer">
+
+
+                <!-- =========================
+                     JOB 1
+                ========================== -->
+
+                <article
+                    class="job-card"
+                    data-salary="250"
+                    data-title="Senior UI/UX Designer"
+                    data-date="6"
+                >
+
+                    <button
+                        class="bookmark"
+                        onclick="toggleBookmark(this)"
+                    >
+                        ♡
+                    </button>
+
+                    <div class="date">
+                        20 May, 2023
+                    </div>
+
+                    <div class="company">
+                        Airbnb
+                    </div>
+
+                    <div class="job-title">
+                        Senior UI/UX
+                        <br>
+                        Designer
+                    </div>
+
+                    <div class="company-logo airbnb">
+                        a
+                    </div>
+
+                    <div class="tags">
+
+                        <span>Full time</span>
+
+                        <span>Senior level</span>
+
+                        <span>Remote</span>
+
+                    </div>
+
+                    <div class="skills">
+                        Product design
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <div>
+                            <div class="salary">
+                                $250/hr
+                            </div>
+
+                            <div class="location">
+                                San Francisco, CA
+                            </div>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            onclick="showDetails(
+                                'Senior UI/UX Designer',
+                                'Airbnb',
+                                'San Francisco, CA',
+                                '$250/hr'
+                            )"
+                        >
+                            Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================
+                     JOB 2
+                ========================== -->
+
+                <article
+                    class="job-card"
+                    data-salary="150"
+                    data-title="Junior UI/UX Designer"
+                    data-date="5"
+                >
+
+                    <button
+                        class="bookmark"
+                        onclick="toggleBookmark(this)"
+                    >
+                        ♡
+                    </button>
+
+                    <div class="date">
+                        4 Feb, 2023
+                    </div>
+
+                    <div class="company">
+                        Google
+                    </div>
+
+                    <div class="job-title">
+                        Junior UI/UX
+                        <br>
+                        Designer
+                    </div>
+
+                    <div class="company-logo google">
+                        G
+                    </div>
+
+                    <div class="tags">
+
+                        <span>Full time</span>
+
+                        <span>Senior level</span>
+
+                        <span>Remote</span>
+
+                    </div>
+
+                    <div class="skills">
+                        Project work
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <div>
+                            <div class="salary">
+                                $150/hr
+                            </div>
+
+                            <div class="location">
+                                California, CA
+                            </div>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            onclick="showDetails(
+                                'Junior UI/UX Designer',
+                                'Google',
+                                'California, CA',
+                                '$150/hr'
+                            )"
+                        >
+                            Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================
+                     JOB 3
+                ========================== -->
+
+                <article
+                    class="job-card"
+                    data-salary="260"
+                    data-title="Senior Motion Designer"
+                    data-date="4"
+                >
+
+                    <button
+                        class="bookmark"
+                        onclick="toggleBookmark(this)"
+                    >
+                        ♡
+                    </button>
+
+                    <div class="date">
+                        27 Jan, 2023
+                    </div>
+
+                    <div class="company">
+                        Dribbble
+                    </div>
+
+                    <div class="job-title">
+                        Senior Motion
+                        <br>
+                        Designer
+                    </div>
+
+                    <div class="company-logo dribbble">
+                    </div>
+
+                    <div class="tags">
+
+                        <span>Full time</span>
+
+                        <span>Senior level</span>
+
+                        <span>Full Day</span>
+
+                    </div>
+
+                    <div class="skills">
+                        3D work
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <div>
+                            <div class="salary">
+                                $260/hr
+                            </div>
+
+                            <div class="location">
+                                New York, NY
+                            </div>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            onclick="showDetails(
+                                'Senior Motion Designer',
+                                'Dribbble',
+                                'New York, NY',
+                                '$260/hr'
+                            )"
+                        >
+                            Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================
+                     JOB 4
+                ========================== -->
+
+                <article
+                    class="job-card"
+                    data-salary="120"
+                    data-title="UX Designer"
+                    data-date="3"
+                >
+
+                    <button
+                        class="bookmark"
+                        onclick="toggleBookmark(this)"
+                    >
+                        ♡
+                    </button>
+
+                    <div class="date">
+                        11 Apr, 2023
+                    </div>
+
+                    <div class="company">
+                        Twitter
+                    </div>
+
+                    <div class="job-title">
+                        UX Designer
+                    </div>
+
+                    <div class="company-logo twitter">
+                        ♥
+                    </div>
+
+                    <div class="tags">
+
+                        <span>Full time</span>
+
+                        <span>Middle level</span>
+
+                        <span>Onsite</span>
+
+                    </div>
+
+                    <div class="skills">
+                        Product design
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <div>
+                            <div class="salary">
+                                $120/hr
+                            </div>
+
+                            <div class="location">
+                                California, CA
+                            </div>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            onclick="showDetails(
+                                'UX Designer',
+                                'Twitter',
+                                'California, CA',
+                                '$120/hr'
+                            )"
+                        >
+                            Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================
+                     JOB 5
+                ========================== -->
+
+                <article
+                    class="job-card"
+                    data-salary="300"
+                    data-title="Graphic Designer"
+                    data-date="2"
+                >
+
+                    <button
+                        class="bookmark"
+                        onclick="toggleBookmark(this)"
+                    >
+                        ♡
+                    </button>
+
+                    <div class="date">
+                        2 Apr, 2023
+                    </div>
+
+                    <div class="company">
+                        Airbnb
+                    </div>
+
+                    <div class="job-title">
+                        Graphic Designer
+                    </div>
+
+                    <div class="company-logo airbnb-pink">
+                        a
+                    </div>
+
+                    <div class="tags">
+
+                        <span>Part time</span>
+
+                        <span>Senior level</span>
+
+                    </div>
+
+                    <div class="skills">
+                        Illustration
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <div>
+                            <div class="salary">
+                                $300/hr
+                            </div>
+
+                            <div class="location">
+                                New York, NY
+                            </div>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            onclick="showDetails(
+                                'Graphic Designer',
+                                'Airbnb',
+                                'New York, NY',
+                                '$300/hr'
+                            )"
+                        >
+                            Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================
+                     JOB 6
+                ========================== -->
+
+                <article
+                    class="job-card"
+                    data-salary="140"
+                    data-title="Graphic Designer"
+                    data-date="1"
+                >
+
+                    <button
+                        class="bookmark"
+                        onclick="toggleBookmark(this)"
+                    >
+                        ♡
+                    </button>
+
+                    <div class="date">
+                        18 Jan, 2023
+                    </div>
+
+                    <div class="company">
+                        Apple
+                    </div>
+
+                    <div class="job-title">
+                        Graphic Designer
+                    </div>
+
+                    <div class="company-logo apple">
+                        
+                    </div>
+
+                    <div class="tags">
+
+                        <span>Full time</span>
+
+                        <span>Onsite</span>
+
+                    </div>
+
+                    <div class="skills">
+                        Visual design
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <div>
+                            <div class="salary">
+                                $140/hr
+                            </div>
+
+                            <div class="location">
+                                San Francisco, CA
+                            </div>
+                        </div>
+
+                        <button
+                            class="details-btn"
+                            onclick="showDetails(
+                                'Graphic Designer',
+                                'Apple',
+                                'San Francisco, CA',
+                                '$140/hr'
+                            )"
+                        >
+                            Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         DETAILS MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="detailsModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                onclick="closeModal()"
+            >
+                ×
+            </button>
+
+            <div class="modal-logo" id="modalLogo">
+                A
+            </div>
+
+            <h2 id="modalJobTitle">
+                Job Title
+            </h2>
+
+            <p
+                class="modal-company"
+                id="modalCompany"
+            >
+                Company
+            </p>
+
+            <div class="modal-details">
+
+                <div>
+                    <span>Location</span>
+                    <strong id="modalLocation">
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Salary</span>
+                    <strong id="modalSalary">
+                    </strong>
+                </div>
+
+            </div>
+
+            <p class="modal-description">
+                This is a recommended job opportunity
+                based on your profile. Check the job
+                requirements and apply if the position
+                matches your skills and interests.
+            </p>
+
+            <button
+                class="apply-btn"
+                onclick="applyJob()"
+            >
+                Apply Now
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
