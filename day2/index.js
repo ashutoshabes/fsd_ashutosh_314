@@ -8,3 +8,5 @@ const showData = async() => {
     // for complete data console.log(data) use kr loa 
     console.log(products)
 }
+
+
